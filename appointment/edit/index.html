@@ -1,0 +1,107 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Reva Interview Scheduling</title>
+  <meta name="description" content="Interview scheduling for Reva jobs">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/foundation.css">
+  <meta name="theme-color" content="#2962ff">
+  <link href="https://static.staging-cust.env.reva.tech/thirdparty/website-utils/website-utils.min.css" rel="stylesheet" type="text/css">
+  <script src="https://static.staging-cust.env.reva.tech/thirdparty/website-utils/website-utils.min.js"></script>
+  <style>
+    .grid-container {
+      padding-bottom: 600px;
+    }
+    [data-reva-root="true"] [type="text"] {
+      margin-bottom: 0;
+    }
+
+    [data-reva-root="true"] [type="text"]:focus {
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <h1 class="hide">Reva Technology</h1>
+      <div class="large-4 medium-6 small-8 cell">
+        <img src="img/reva_logo_horizontal_rgb.svg" />
+      </div>
+      <div class="large-12 cell">
+        <h2>Interview Scheduling</h2>
+      </div>
+      <div class="large-12 cell">
+        <div class="grid-x grid-padding-x">
+          <div class="large-8 cell">
+            <p>Use the calendar below to select a time for your interview.  A 90 minute block will be scheduled, but interviews typically take less than 60 minutes.  We block the additional time to ensure there's no rush.</p>
+          </div>
+        </div>
+      </div>
+      <div class="large-12 cell">
+        <div class="grid-x grid-padding-x">
+          <div class="large-8 cell">
+            <p><strong>NOTE:</strong> The below times are scheduled according to Pacific Standard Time (PST).</p>
+            <div id="ba-widget"></div>
+            <script type="text/javascript">
+            (function () {
+              var token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJib2R5Ijoie0VOQ1JZUFRFRH06SUlQSEdadmhzZmZUK2RDMzpZQS9Kd29ndGp2UHhJU25aNEErK1NsNGt4cGc1T3QxcXVzOEJaNjdiMDJVM1hWV0hNM3JpUmRGV2FXSlhFMTNkdkUyN0wxdGtFSUdybHIrNW1HNUFVRFhkby95NjNzcVNBaUt3aXlFdDhpOTNuN3dMZ0hxMHNKTmxwVjROQTZhZVV6aXFMTTdWSXhUYTRmOHg1em5TNjlnTktSK2M3QkdBTG1oRTI0NzFrWnNYZURGajJZMnluRE5ib1BJNEk5RWxjUm1SRTh6Rkd0c0hwUk93VDVjc1llRHBTYzhYLzlKT1FnPT0iLCJpYXQiOjE1ODI3NTE4NTQsImV4cCI6MTY0NTg2NzA1NH0.rbU0INDht3Q1qno9ft-U-S04XWKjXYI4AAMiWuil9aQ';
+              var host = 'https://jobs.staging-cust.env.reva.tech';
+              var googleMapsApiToken = 'AIzaSyCmdE6eqG553ETS5VS4j0wuIH_hN6XFTBE';
+              Reva.initUtils({ host: host, token: token, loadCSS: false, googleMapsApiToken: googleMapsApiToken });
+              var s = Reva.stores.getWebSiteStore();
+
+              s.setCurrentPropertyId('deb49e7a-03b1-4679-8da1-3f6235023cd2');
+
+              document.addEventListener("DOMContentLoaded", function () {
+                Reva.ui.createBookerWidget('#ba-widget', { mode: 'edit', dynamicFields: [] });
+              });
+            }());
+            </script>
+            <br />
+          </div>
+          <div class="large-4 cell">
+            <h4>Interviewers</h4>
+            <div class="grid-x grid-padding-x callout">
+              <div class="large-4 medium-2 small-4 cell">
+                <img src="img/josh.png" width="" />
+              </div>
+              <div class="large-8 medium-10 small-8 cell">
+                <h4>Josh</h4>
+                <p>With nearly 20 years of experience building and managing Silicon Valley startups, Josh is the head of the Reva product team.</p>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x callout">
+              <div class="large-4 medium-2 small-4 cell">
+                <img src="img/ityam.png" width="" />
+              </div>
+              <div class="large-8 medium-10 small-8 cell">
+                <h4>Ityam</h4>
+                <p>With over 10 years of experience designing great products across numerous industries, Ityam is the principle designer for Reva.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="js/vendor/app.js"></script>
+</body>
+
+</html>
